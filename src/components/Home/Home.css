@@ -1,0 +1,65 @@
+.home-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  border: 2px solid red;
+}
+
+.home-container {
+  text-align: center;
+  border: 2px solid blue;
+}
+
+.home-container h1 {
+  font-size: 8rem;
+  color: black;
+  margin: 0;
+  padding: 20px;
+}
+
+.icons-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.icon:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
+  
