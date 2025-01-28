@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './Home.css';
+import Navbar from'./Navbar.jsx';
 
 export const Home = () => {
 
@@ -39,15 +40,16 @@ export const Home = () => {
 
   return (
     <div className="gradient-bg">
+      <Navbar />
       {/* svg for the filter to make the gooey effect and merge/blend the colors*/}
       <svg>
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-            <feBlend in="SourceGraphic" in2="goo" />
-          </filter>
-        </defs>
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 25 -10" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" mode="multiply" />
+        </filter>
+      </defs>
       </svg>
       <div className="gradiant-container"></div>
       <div className="g1"></div>
@@ -55,7 +57,7 @@ export const Home = () => {
       <div className="g3"></div>
       <div className="g4"></div>
       <div className="g5"></div>
-      <div className="interactive"></div>
+      <div></div>
     </div>
   );
 };
