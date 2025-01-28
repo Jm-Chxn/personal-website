@@ -1,25 +1,22 @@
-// import React from 'react';
-// import './Intro.css';
-// import Typed from 'react-typed';
+import React from 'react';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
-// const NavBar = () => {
-//   return (
-//     <div className='Intro'>
-//         <h1 className ="title">Hi, my name is Jim</h1>
-//         <div className='Animated-Typing'>
-//             <Typed
-//                 string={[
-//                     "I am a Student",
-//                     "I am a Software Engineer",
-//                     "I am a developer",
-//                 ]}
-//                 typeSpeed={100}
-//                 backSpeed={100}
-//                 loop={true}
-//             />
-//         </div>
-//     </div>
-//   );
-// };
+function Intro() {
+  const [text] = useTypewriter({
+    words: ['Hello, I am a software developer', 'Welcome to the website!'],
+    loop: true,
+    typeSpeed: 100,
+    deleteSpeed: 50,
+  });
 
-// export default NavBar;
+  return (
+    <div className="App">
+      <h1>
+        {text}
+        <Cursor />
+      </h1>
+    </div>
+  );
+}
+
+export default Intro;

@@ -41,7 +41,7 @@ export const Home = () => {
 
   return (
     <div className="gradient-bg">
-      {/* <Intro /> */}
+      <Intro />
       <Navbar />
       {/* svg for the filter to make the gooey effect and merge/blend the colors*/}
       <svg>
