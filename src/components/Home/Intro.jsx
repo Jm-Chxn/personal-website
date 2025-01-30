@@ -11,7 +11,7 @@ function Intro() {
 
   return (
     <div className="App">
-      <h1>
+      <h1 style={{ color: 'white' }}>
         {text}
         <Cursor />
       </h1>
