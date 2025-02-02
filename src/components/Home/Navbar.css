@@ -6,6 +6,9 @@
     padding: 20px;
     background-color: transparent ;  
     color: white;
+    position: absolute; /* Change to absolute */
+    top: 0; /* Ensure it stays at the top */
+    z-index: 1000; /* Ensure NavBar stays above other content */
 }
 
 ul {
@@ -34,3 +37,40 @@ ul li {
 ul li:hover {
     color: #b8b8b8;    /* Changed to a softer hover color */
 }
+
+
+
+  body{
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+  .app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: transparent;
+  }
+  .container{
+    font-size: 90px;
+    color: white;
+    font-weight: 650;
+    z-index: 100;
+    margin-bottom: 35px;
+  }
+  
+  .animated-typing{
+    font-size: 90px;
+    color: white;
+    font-weight: 650;
+    z-index: 100;
+  }
+  .animated-typing span{
+    color: rgb(148, 129, 173);
+    z-index: 100;
+  }
+
+

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './Home.css';
 import Navbar from'./Navbar.jsx';
+import Intro from './Intro.jsx';
 
 export const Home = () => {
 
@@ -40,6 +41,7 @@ export const Home = () => {
 
   return (
     <div className="gradient-bg">
+      <Intro />
       <Navbar />
       {/* svg for the filter to make the gooey effect and merge/blend the colors*/}
       <svg>
