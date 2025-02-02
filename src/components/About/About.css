@@ -1,0 +1,17 @@
+.about {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  /* Add responsive padding */
+  @media (max-width: 768px) {
+    .about {
+      padding: 1rem;
+    }
+  }
