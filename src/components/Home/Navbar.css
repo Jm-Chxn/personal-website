@@ -6,7 +6,7 @@
     padding: 20px;
     background-color: transparent ;  
     color: white;
-    position: absolute; /* Change to absolute */
+    position: fixed; /* Change to absolute */
     top: 0; /* Ensure it stays at the top */
     z-index: 1000; /* Ensure NavBar stays above other content */
 }
