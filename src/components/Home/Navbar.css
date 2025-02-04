@@ -45,38 +45,6 @@ a {
 }
 
 
-  body{
-    height: 100vh;
-    font-family: 'Inter', sans-serif;
-  }
-  .app{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 70vh;
-    width: 100vw;
-    z-index: 10;
-    background-color: transparent;
-  }
-  .container{
-    font-size: 90px;
-    color: white;
-    font-weight: 650;
-    z-index: 100;
-    margin-bottom: 35px;
-  }
   
-  .animated-typing{
-    font-size: 90px;
-    color: white;
-    font-weight: 650;
-    z-index: 100;
-  }
-  .animated-typing span{
-    color: rgb(148, 129, 173);
-    z-index: 100;
-  }
-
 
 

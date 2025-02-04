@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './About.css';
-import profilePic from '../../assets/pp.jpg'; // Adjust the path as necessary
+import profilePic from '../../assets/pp.jpg';
 
 const About = () => {
   useEffect(() => {
