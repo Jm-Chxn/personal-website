@@ -1,0 +1,78 @@
+.project {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 2rem;
+  background: black;
+  color: white;
+  font-family: 'Dongle', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project h1 {
+  font-size: 60px;
+  margin-top: 150px;
+  padding: 20px 20px;
+  background-color: transparent;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(66, 66, 94, 0.8);
+  width: fit-content;
+}
+
+.autoShow {
+  animation: autoShowAnimation both;
+  animation-timeline: view(40% 30%);
+}
+
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.picture {
+  height: 50vh;
+  padding: 20px 20px;
+  background-color: rgba(25, 25, 35, 0.8);
+  border-radius: 25px;
+  width: fit-content;
+  box-shadow: 0px 4px 10px rgba(66, 66, 94, 0.8);
+  margin-top: 3rem;
+  margin-left: 70%;
+  animation: autoShowAnimation both;
+  animation-timeline: view(100% 30%);
+}
+
+.projectline{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -25%;
+  margin-left: 10%;
+  animation: autoShowAnimation both;
+  animation-timeline: view(100% 20%);
+}
+
+.projectline p{
+  font-size: 30px;
+  text-align: left; 
+  width: 35%;
+}
+
+.projectline a{
+  text-decoration: underline;
+  font-weight: 200px;
+}
+
+.projectline a:hover{
+  color: #4d7fad; 
+  text-decoration: underline;
+}
