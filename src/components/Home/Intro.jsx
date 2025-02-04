@@ -1,5 +1,7 @@
 import React from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import profilePic from '../../assets/pp.jpg';
+import './Intro.css';
 
 function Intro() {
   const [text] = useTypewriter({
@@ -13,6 +15,7 @@ function Intro() {
     <div className="app">
       <div className="container">
         Hey, I'm Jim
+        <img src={profilePic} alt="Profile" className="pfp" />
       </div>
       <div className="animated-typing">
         I am a 

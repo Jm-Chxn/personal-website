@@ -82,22 +82,20 @@ html, body {
 }
 
 .gradient-bg {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh; /* Change from height to min-height */
   position: relative;
   overflow: hidden;
   background: black;
   top: 0;
   left: 0;
 
-  svg {
-    position: fixed;
-    top:0;
-    left:0;
-    width: 0;
-    height: 0;
-  }
 
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
   .gradients-container {
     filter: url(#goo) blur(40px) ;
@@ -145,11 +143,11 @@ html, body {
 
     width: var(--circle-size);
     height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2 + 200px);
+    top: calc(50% - var(--circle-size) / 2 + 30px);
     left: calc(50% - var(--circle-size) / 2 - 500px);
 
     transform-origin: calc(50% + 400px);
-    animation: moveInCircle 40s linear infinite;
+    animation: moveInCircle 20s ease infinite;
 
     opacity: 1;
   }
