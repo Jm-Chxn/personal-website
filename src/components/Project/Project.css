@@ -13,9 +13,9 @@
 }
 
 .project h1 {
-  font-size: 60px;
+  font-size: clamp(40px, 5vw, 60px);
   margin-top: 150px;
-  padding: 20px 20px;
+  padding: 20px;
   background-color: transparent;
   border-radius: 25px;
   box-shadow: 0px 4px 10px rgba(66, 66, 94, 0.8);
@@ -38,41 +38,76 @@
   }
 }
 
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 3rem;
+  padding: 0 2rem;
+  margin-bottom: 10rem;
+  gap: 2rem;
+}
+
 .picture {
   height: 50vh;
-  padding: 20px 20px;
+  min-height: 300px;
+  padding: 20px;
   background-color: rgba(25, 25, 35, 0.8);
   border-radius: 25px;
-  width: fit-content;
+  width: 45%;
   box-shadow: 0px 4px 10px rgba(66, 66, 94, 0.8);
-  margin-top: 3rem;
-  margin-left: 70%;
   animation: autoShowAnimation both;
   animation-timeline: view(100% 30%);
 }
 
-.projectline{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: -25%;
-  margin-left: 10%;
+.projectline {
+  width: 45%;
   animation: autoShowAnimation both;
   animation-timeline: view(100% 20%);
 }
 
-.projectline p{
-  font-size: 30px;
-  text-align: left; 
-  width: 35%;
+.projectline p {
+  font-size: clamp(20px, 2.5vw, 30px);
+  text-align: left;
+  width: 100%;
 }
 
-.projectline a{
+.projectline a {
   text-decoration: underline;
-  font-weight: 200px;
+  font-weight: 200;
+  display: flex;
+  justify-content: left;
+  width: fit-content;
 }
 
-.projectline a:hover{
-  color: #4d7fad; 
+.projectline a:hover {
+  color: #4d7fad;
   text-decoration: underline;
+}
+
+.projectline h2{
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .picture,
+  .projectline {
+    width: 100%;
+    margin: 0;
+  }
+
+  .picture {
+    height: 40vh;
+  }
+
+  .projectline p {
+    text-align: center;
+  }
 }
