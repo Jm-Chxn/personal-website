@@ -1,0 +1,113 @@
+.project {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 2rem;
+  background: black;
+  color: white;
+  font-family: 'Dongle', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project h1 {
+  font-size: clamp(40px, 5vw, 60px);
+  margin-top: 150px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(66, 66, 94, 0.8);
+  width: fit-content;
+}
+
+.autoShow {
+  animation: autoShowAnimation both;
+  animation-timeline: view(40% 30%);
+}
+
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 3rem;
+  padding: 0 2rem;
+  margin-bottom: 10rem;
+  gap: 2rem;
+}
+
+.picture {
+  height: 50vh;
+  min-height: 300px;
+  padding: 20px;
+  background-color: rgba(25, 25, 35, 0.8);
+  border-radius: 25px;
+  width: 45%;
+  box-shadow: 0px 4px 10px rgba(66, 66, 94, 0.8);
+  animation: autoShowAnimation both;
+  animation-timeline: view(100% 30%);
+}
+
+.projectline {
+  width: 45%;
+  animation: autoShowAnimation both;
+  animation-timeline: view(100% 20%);
+}
+
+.projectline p {
+  font-size: clamp(20px, 2.5vw, 30px);
+  text-align: left;
+  width: 100%;
+}
+
+.projectline a {
+  text-decoration: underline;
+  font-weight: 200;
+  display: flex;
+  justify-content: left;
+  width: fit-content;
+}
+
+.projectline a:hover {
+  color: #4d7fad;
+  text-decoration: underline;
+}
+
+.projectline h2{
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .picture,
+  .projectline {
+    width: 100%;
+    margin: 0;
+  }
+
+  .picture {
+    height: 40vh;
+  }
+
+  .projectline p {
+    text-align: center;
+  }
+}

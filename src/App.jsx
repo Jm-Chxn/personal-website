@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Home } from './components/Home/Home';
 import About from './components/About/About';
+import Project from './components/Project/Project';
 
 function App() {
   return (
@@ -12,15 +13,15 @@ function App() {
       <div id="about">
         <About />
       </div>
-      {/* <div id="projects">
-        <Projects />
+      <div id="project">
+        <Project />
       </div>
-      <div id="skills">
+      {/* <div id="skills">
         <Skills />
       </div>
       <div id="message">
         <Message />
-      </div> */}
+      </div>  */}
     </div>
   );
 }
