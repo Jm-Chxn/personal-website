@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
+
 const NavBar = () => {
     const handleScroll = (id) => {
         const element = document.getElementById(id);
