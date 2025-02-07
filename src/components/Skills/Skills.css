@@ -12,12 +12,36 @@
     align-items: center;
   }
 
+  .skills h1 {
+    font-size: clamp(40px, 5vw, 60px);
+    margin-top: 150px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(66, 66, 94, 0.8);
+    width: fit-content;
+  }
+
   .slider{
     width: 100%;
     height: var(--height);
     overflow: hidden;
     mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+    margin-top: 100px;
 
+  }
+  .list {
+    display: flex;
+    gap: 2rem; 
+  }
+
+  .item{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--width);
+    height: var(--height);
   }
 
   .slider .list{
@@ -52,5 +76,24 @@
   .slider:hover .item{
     animation-play-state: paused!important;
   }
+
+  .autoShows {
+    animation: autoShowAnimations both;
+    animation-timeline: view(40% 30%);
+  }
+
+
+  @keyframes autoShowAnimations {
+    from {
+      opacity: 0;
+      transform: translateY(200px) scale(0.3);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  
 
   
