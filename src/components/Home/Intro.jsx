@@ -11,6 +11,12 @@ function Intro() {
     deleteSpeed: 50,
   });
 
+  const links = [
+    { href: "https://github.com/Jm-Chxn", text: "Github" },
+    { href: "https://github.com/Jm-Chxn", text: "Resume" },
+    { href: "https://www.linkedin.com/in/-jimchen-/", text: "LinkedIn" }
+  ];
+
   return (
     <div className="app">
       <div className="container">
@@ -21,6 +27,20 @@ function Intro() {
         I am a 
         <span>{text}</span>
         <Cursor />
+      </div>
+      <div className="buttons-container">
+        {links.map(({ href, text }) => (
+          <div key={text} className="buttons">
+            <a 
+              href={href}
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="link"
+            >
+              {text}
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   );
