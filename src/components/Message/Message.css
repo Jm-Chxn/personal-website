@@ -34,10 +34,29 @@
 }
 
 .message-line {
-    width: 250px;
+    width: 0;
     height: 4px;
     background: rgb(104, 115, 211);
+    transition: width 1s ease-in-out;
 }
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.message-section.show .message-line {
+    transition: width 1s ease-in-out;
+    transition-delay: 2s;
+    width: 250px;
+}
+
 
 .form-section {
     flex: 0 0 500px; 
