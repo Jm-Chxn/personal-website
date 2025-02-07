@@ -37,6 +37,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    alert('Currently unavailable');
     console.log('Form submitted:', formData);
   };
 
@@ -54,7 +55,7 @@ const ContactForm = () => {
             <div className="inner-container">
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                  <label>Full Name</label>
+                  <label style={{fontWeight: "bold"}} >Full Name</label>
                   <input
                     type="text"
                     name="fullName"
@@ -65,7 +66,7 @@ const ContactForm = () => {
                 </div>
 
                 <div className="form-group">
-                  <label>Email</label>
+                  <label style={{fontWeight: "bold"}}>Email</label>
                   <input
                     type="email"
                     name="email"
@@ -76,7 +77,7 @@ const ContactForm = () => {
                 </div>
 
                 <div className="form-group">
-                  <label>Message</label>
+                  <label style={{fontWeight: "bold"}}>Message</label>
                   <textarea
                     name="message"
                     value={formData.message}
@@ -85,7 +86,7 @@ const ContactForm = () => {
                   />
                 </div>
 
-                <button type="submit" className="submit-button">
+                <button type="submit" className="submit-button" style={{fontWeight: "bold"}}>
                   Submit
                 </button>
               </form>

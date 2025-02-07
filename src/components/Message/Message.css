@@ -69,7 +69,7 @@
 .form-container {
     width: 100%;
     position: relative;
-    padding: 2rem;
+    padding: 10px;
     background-color: rgba(25, 25, 35, 0.8);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(66, 66, 94, 0.8);
@@ -82,11 +82,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px solid rgba(148, 129, 173, 0.8);
+    border: 1px solid rgba(148, 129, 173, 0.8);
     border-radius: 10px;
     pointer-events: none;
     padding: 1px;
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+    background: linear-gradient(90deg, #3f1e74, #140e47, #52072c);
     z-index: 0;
 }
 
