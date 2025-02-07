@@ -4,6 +4,7 @@ import { Home } from './components/Home/Home';
 import About from './components/About/About';
 import Project from './components/Project/Project';
 import Skills from './components/Skills/Skills';
+import Message from './components/Message/Message';
 
 function App() {
   return (
@@ -20,9 +21,9 @@ function App() {
       <div id="skills">
         <Skills />
       </div>
-      {/* <div id="message">
+      <div id="message">
         <Message />
-      </div>  */}
+      </div> 
     </div>
   );
 }
