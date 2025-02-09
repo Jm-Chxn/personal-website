@@ -58,7 +58,7 @@ section h1 {
 .content {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Changed to space-between */
+  justify-content: space-between; 
   gap: 4rem;
   margin-top: 2rem;
   width: 100%;
@@ -67,7 +67,7 @@ section h1 {
 
 .text-content {
   flex: 1;
-  max-width: 60%; /* Added max-width to control text content width */
+  max-width: 60%; 
 }
 
 section p {
@@ -78,7 +78,7 @@ section p {
 }
 
 .profile-pic {
-  height: 45vh;
+  height: 40vh;
   min-height: 300px;
   padding: 20px;
   background-color: rgba(25, 25, 35, 0.8);
