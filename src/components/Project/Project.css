@@ -38,7 +38,6 @@
   }
 }
 
-
 .content-container {
   display: flex;
   justify-content: space-between;
@@ -52,12 +51,13 @@
 }
 
 .picture {
-  height: 50vh;
+  max-height: 70vh; 
   min-height: 300px;
   padding: 20px;
   background-color: rgba(25, 25, 35, 0.8);
   border-radius: 25px;
-  width: 45%;
+  width: 100%; 
+  max-width: 50%; 
   box-shadow: 0px 4px 10px rgba(66, 66, 94, 0.8);
   animation: autoShowAnimation both;
   animation-timeline: view(100% 30%);
@@ -88,9 +88,10 @@
   text-decoration: underline;
 }
 
-.projectline h2{
+.projectline h2 {
   text-align: left;
 }
+
 @media (max-width: 768px) {
   .content-container {
     flex-direction: column-reverse;
@@ -104,7 +105,7 @@
   }
 
   .picture {
-    height: 40vh;
+    max-height: 50vh; 
   }
 
   .projectline p {

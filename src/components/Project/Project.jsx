@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './Project.css';
-import profilePic from '../../assets/pp.jpg';
+import emergency from '../../assets/emergency.png';
+import quizzify from '../../assets/quizzify.png';
 
 const Project = () => {
   return (
@@ -23,7 +24,7 @@ const Project = () => {
             Live Website
           </a>
         </div>
-        <img src={profilePic} alt="Profile" className="picture" />
+        <img src={emergency} alt="Profile" className="picture" />
       </div>
       <div className="content-container">
         <div className="projectline">
@@ -40,7 +41,7 @@ const Project = () => {
             Github
           </a>
         </div>
-        <img src={profilePic} alt="Profile" className="picture" />
+        <img src={quizzify} alt="Profile" className="picture" />
       </div>
     </div>
   );
