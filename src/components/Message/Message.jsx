@@ -8,6 +8,12 @@ const ContactForm = () => {
     message: ''
   });
 
+  const links = [
+    { href: "https://github.com/Jm-Chxn", text: "Github" },
+    { href: "https://www.linkedin.com/in/-jimchen-/", text: "LinkedIn" }
+  ];
+
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -92,6 +98,24 @@ const ContactForm = () => {
               </form>
             </div>
           </div>
+        </div>
+        <div>
+            <div className="line"></div>
+            <div className = "link-container">
+            <div>© 2025 Jim Chen. All Rights Reserved.</div>
+          {links.map(({ href, text }) => (
+            <div key={text}>
+              <a 
+                href={href}
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="link"
+              >
+                {text}
+              </a>
+            </div>
+          ))}
+         </div>
         </div>
       </section>
     </div>
