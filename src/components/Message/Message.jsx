@@ -99,23 +99,23 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-        <div>
-            <div className="line"></div>
-            <div className = "link-container">
+        <div className="line"></div>
+        <div className="link-container">
             <div>© 2025 Jim Chen. All Rights Reserved.</div>
-          {links.map(({ href, text }) => (
-            <div key={text}>
-              <a 
-                href={href}
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="link"
-              >
-                {text}
-              </a>
+            <div className="links-right">
+                {links.map(({ href, text }) => (
+                    <div key={text}>
+                        <a 
+                            href={href}
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="link"
+                        >
+                            {text}
+                        </a>
+                    </div>
+                ))}
             </div>
-          ))}
-         </div>
         </div>
       </section>
     </div>
