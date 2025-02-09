@@ -99,7 +99,7 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-        <div className="line"></div>
+        <div className="lines"></div>
         <div className="link-container">
             <div>© 2025 Jim Chen. All Rights Reserved.</div>
             <div className="links-right">
