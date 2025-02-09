@@ -32,9 +32,9 @@ const About = () => {
             <img src={skiPic} alt="Profile" className="profile-pic" />
             <div className="text-content">
               <p>
-                Hello, my name is Jim. Currently, I am a student at Simon Fraser University pursuing a dual degree program 
-                in Computing Science and a Master in Finance. I am passionate about software development and always looking 
-                for new opportunities to learn and grow. Outside of software development, I enjoy watching and playing sports 
+                Hello, my name is Jim. I am a student at Simon Fraser University pursuing a dual degree program 
+                in Computing Science and Finance. I am passionate about software development and always looking 
+                for new opportunities to learn and grow. Outside of software development, I enjoy both watching and playing sports 
                 such as soccer, tennis, and skiing.
               </p>
             </div>
