@@ -101,7 +101,7 @@ const ContactForm = () => {
         </div>
         <div className="lines"></div>
         <div className="link-container">
-            <div>© 2025 Jim Chen. All Rights Reserved.</div>
+            <div style={{color:'white'}}>© 2025 Jim Chen. All Rights Reserved.</div>
             <div className="links-right">
                 {links.map(({ href, text }) => (
                     <div key={text}>
